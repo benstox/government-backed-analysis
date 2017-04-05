@@ -2,4 +2,4 @@ syntax: glob
 
 .DS_Store
 .Rapp.history
-.hg/
+.git/
