@@ -1,0 +1,733 @@
+region,local_authority
+Northern Ireland,Antrim Borough Council
+Northern Ireland,Ards Borough Council
+Northern Ireland,Ballymoney Borough Council
+Northern Ireland,Banbridge District Council
+Northern Ireland,Belfast City Council
+Northern Ireland,Carrickfergus Borough Council
+Northern Ireland,Castlereagh Borough Council
+Northern Ireland,Coleraine Borough Council
+Northern Ireland,Cookstown District Council
+Northern Ireland,Derry City Council
+Northern Ireland,Down District Council
+Northern Ireland,Dungannon and South Tyrone Borough Council
+Northern Ireland,Fermanagh District Council
+Northern Ireland,Larne Borough Council
+Northern Ireland,Limavady Borough Council
+Northern Ireland,Lisburn City Council
+Northern Ireland,Moyle District Council
+Northern Ireland,Newtownabbey Borough Council
+Northern Ireland,North Down Borough Council
+Northern Ireland,Omagh District Council
+Northern Ireland,Strabane District Council
+Northern Ireland,Armagh City and District Council
+Northern Ireland,Ballymena Borough Council
+Northern Ireland,Craigavon Borough Council
+Northern Ireland,Magherafelt District Council
+Northern Ireland,Newry and Mourne District Council
+Yorkshire and Humberside,Barnsley Metropolitan Borough Council
+Yorkshire and Humberside,Doncaster Metropolitan Borough Council
+Yorkshire and Humberside,Rotherham Metropolitan Borough Council
+Yorkshire and Humberside,Sheffield City Council
+Yorkshire and Humberside,City of Bradford Metropolitan District Council
+Yorkshire and Humberside,Calderdale Metropolitan Borough Council
+Yorkshire and Humberside,Kirklees Council
+Yorkshire and Humberside,Leeds City Council
+Yorkshire and Humberside,City of Wakefield Metropolitan District Council
+Yorkshire and Humberside,Kingston upon Hull City Council
+Yorkshire and Humberside,East Riding of Yorkshire Council
+Yorkshire and Humberside,North East Lincolnshire Council
+Yorkshire and Humberside,North Lincolnshire Council
+Yorkshire and Humberside,York City Council
+Yorkshire and Humberside,Craven District Council
+Yorkshire and Humberside,Hambleton District Council
+Yorkshire and Humberside,Harrogate Borough Council
+Yorkshire and Humberside,Richmondshire District Council
+Yorkshire and Humberside,Ryedale District Council
+Yorkshire and Humberside,Scarborough Borough Council
+Yorkshire and Humberside,Selby District Council
+East Midlands,Derby City Council
+East Midlands,Leicester City Council
+East Midlands,Rutland County Council
+East Midlands,Nottingham City Council
+East Midlands,Amber Valley Borough Council
+East Midlands,Bolsover District Council
+East Midlands,Chesterfield Borough Council
+East Midlands,Derbyshire Dales District Council
+East Midlands,Erewash Borough Council
+East Midlands,High Peak Borough Council
+East Midlands,North East Derbyshire District Council
+East Midlands,South Derbyshire District Council
+East Midlands,Blaby District Council
+East Midlands,Charnwood Borough Council
+East Midlands,Harborough District Council
+East Midlands,Hinckley and Bosworth Borough Council
+East Midlands,Melton Borough Council
+East Midlands,North West Leicestershire District Council
+East Midlands,Oadby and Wigston Borough Council
+East Midlands,Boston Borough Council
+East Midlands,East Lindsey District Council
+East Midlands,Lincoln City Council
+East Midlands,North Kesteven District Council
+East Midlands,South Holland District Council
+East Midlands,South Kesteven District Council
+East Midlands,West Lindsey District Council
+East Midlands,Corby Borough Council
+East Midlands,Daventry District Council
+East Midlands,East Northamptonshire District Council
+East Midlands,Kettering Borough Council
+East Midlands,Northampton Borough Council
+East Midlands,South Northamptonshire Council
+East Midlands,Wellingborough Borough Council
+East Midlands,Ashfield District Council
+East Midlands,Bassetlaw District Council
+East Midlands,Broxtowe Borough Council
+East Midlands,Gedling Borough Council
+East Midlands,Mansfield District Council
+East Midlands,Newark and Sherwood District Council
+East Midlands,Rushcliffe Borough Council
+North East,Newcastle upon Tyne City Council
+North East,North Tyneside Metropolitan Borough Council
+North East,South Tyneside Metropolitan Borough Council
+North East,Sunderland City Council
+North East,Hartlepool Borough Council
+North East,Middlesbrough Council
+North East,Redcar and Cleveland Borough Council
+North East,Stockton-on-Tees Borough Council
+North East,Darlington Borough Council
+North East,Durham County Council
+North East,Gateshead Borough Council
+North East,Northumberland
+North West,Bolton Metropolitan Borough Council
+North West,Bury Metropolitan Borough Council
+North West,Manchester City Council
+North West,Oldham Metropolitan Borough Council
+North West,Rochdale Metropolitan Borough Council
+North West,Salford City Council
+North West,Stockport Metropolitan Borough Council
+North West,Tameside Metropolitan Borough Council
+North West,Trafford Metropolitan Borough
+North West,Wigan Metropolitan Borough Council
+North West,Knowsley Metropolitan Borough Council
+North West,Liverpool City Council
+North West,St Helens Metropolitan Borough Council
+North West,Sefton Council
+North West,Wirral Metropolitan Borough Council
+North West,Cheshire East Council
+North West,Halton Borough Council
+North West,Warrington Borough Council
+North West,Cheshire West and Chester Council
+North West,Blackburn with Darwen Borough Council
+North West,Blackpool Borough Council
+North West,Allerdale Borough Council
+North West,Barrow in Furness Borough Council
+North West,Carlisle City Council
+North West,Copeland Borough Council
+North West,Eden District Council
+North West,South Lakeland District Council
+North West,Burnley Borough Council
+North West,Chorley Borough Council
+North West,Fylde Borough Council
+North West,Hyndburn Borough Council
+North West,Lancaster City Council
+North West,Pendle Borough Council
+North West,Preston City Council
+North West,Ribble Valley Borough Council
+North West,Rossendale Borough Council
+North West,South Ribble Borough Council
+North West,West Lancashire District Council
+North West,Wyre Borough Council
+South East,Isle of Wight Council
+South East,Medway Council
+South East,Bracknell Forest Borough Council
+South East,West Berkshire Council
+South East,Reading Borough Council
+South East,Slough Borough Council
+South East,Windsor and Maidenhead Royal Borough Council
+South East,Wokingham Borough Council
+South East,Milton Keynes Council
+South East,Brighton & Hove City Council
+South East,Portsmouth City Council
+South East,Southampton City Council
+South East,Aylesbury Vale District Council
+South East,Chiltern District Council
+South East,South Bucks District Council
+South East,Wycombe District Council
+South East,Eastbourne Borough Council
+South East,Hastings Borough Council
+South East,Lewes District Council
+South East,Rother District Council
+South East,Wealden District Council
+South East,Basingstoke and Deane Borough Council
+South East,East Hampshire District Council
+South East,Eastleigh Borough Council
+South East,Fareham Borough Council
+South East,Gosport Borough Council
+South East,Hart District Council
+South East,Havant Borough Council
+South East,New Forest District Council
+South East,Rushmoor Borough Council
+South East,Test Valley Borough Council
+South East,Winchester City Council
+South East,Ashford Borough Council
+South East,Canterbury City Council
+South East,Dartford Borough Council
+South East,Dover District Council
+South East,Gravesham Borough Council
+South East,Maidstone Borough Council
+South East,Sevenoaks District Council
+South East,Shepway District Council
+South East,Swale Borough Council
+South East,Thanet District Council
+South East,Tonbridge and Malling Borough Council
+South East,Tunbridge Wells Borough Council
+South East,Cherwell District Council
+South East,Oxford City Council
+South East,South Oxfordshire District Council
+South East,Vale of White Horse District Council
+South East,West Oxfordshire District Council
+South East,Elmbridge Borough Council
+South East,Epsom and Ewell Borough Council
+South East,Guildford Borough Council
+South East,Mole Valley District Council
+South East,Reigate and Banstead Borough Council
+South East,Runnymede Borough Council
+South East,Spelthorne Borough Council
+South East,Surrey Heath Borough Council
+South East,Tandridge District Council
+South East,Waverley Borough Council
+South East,Woking Borough Council
+South East,Adur District Council
+South East,Arun District Council
+South East,Chichester District Council
+South East,Crawley Borough Council
+South East,Horsham District Council
+South East,Mid Sussex District Council
+South East,Worthing Borough Council
+South West,Bath and North East Somerset Council
+South West,Bristol City Council
+South West,North Somerset District Council
+South West,South Gloucestershire Council
+South West,Cornwall Council
+South West,Plymouth City Council
+South West,Torbay Council
+South West,Bournemouth Borough Council
+South West,Borough of Poole
+South West,Swindon Borough Council
+South West,Wiltshire Council
+South West,Isle of Scilly Council
+South West,East Devon District Council
+South West,Exeter City Council
+South West,Mid Devon District Council
+South West,North Devon District Council
+South West,South Hams District Council
+South West,Teignbridge District Council
+South West,Torridge District Council
+South West,West Devon Borough Council
+South West,Christchurch Borough Council
+South West,East Dorset District Council
+South West,North Dorset District Council
+South West,Purbeck District Council
+South West,West Dorset District Council
+South West,Weymouth and Portland Borough Council
+South West,Cheltenham Borough Council
+South West,Cotswold District Council
+South West,Forest of Dean District Council
+South West,Gloucester City Council
+South West,Stroud District Council
+South West,Tewkesbury Borough Council
+South West,Mendip District Council
+South West,Sedgemoor District Council
+South West,South Somerset District Council
+South West,Taunton Deane District Council
+South West,West Somerset District Council
+West Midlands,Birmingham City Council
+West Midlands,Coventry City Council
+West Midlands,Dudley Metropolitan Borough Council
+West Midlands,Sandwell Metropolitan Borough Council
+West Midlands,Solihull Metropolitan Borough Council
+West Midlands,Walsall Metropolitan Borough Council
+West Midlands,Wolverhampton City Council
+West Midlands,Herefordshire County Council
+West Midlands,Telford and Wrekin Borough Council
+West Midlands,Shropshire Council
+West Midlands,Stoke on Trent City Council
+West Midlands,Cannock Chase District Council
+West Midlands,East Staffordshire Borough Council
+West Midlands,Lichfield District Council
+West Midlands,Newcastle under Lyme Borough Council
+West Midlands,South Staffordshire Council
+West Midlands,Stafford Borough Council
+West Midlands,Staffordshire Moorlands District Council
+West Midlands,Tamworth Borough Council
+West Midlands,North Warwickshire Borough Council
+West Midlands,Nuneaton and Bedworth Borough Council
+West Midlands,Rugby Borough Council
+West Midlands,Stratford on Avon District Council
+West Midlands,Warwick District Council
+West Midlands,Bromsgrove District Council
+West Midlands,Malvern Hills District Council
+West Midlands,Redditch Borough Council
+West Midlands,Worcester City Council
+West Midlands,Wychavon District Council
+West Midlands,Wyre Forest District Council
+Scotland,Aberdeen City Council
+Scotland,Aberdeenshire Council
+Scotland,Angus Council
+Scotland,Argyll and Bute Council
+Scotland,Scottish Borders Council
+Scotland,Clackmannanshire Council
+Scotland,West Dunbartonshire Council
+Scotland,Dumfries and Galloway Council
+Scotland,Dundee City Council
+Scotland,East Ayrshire Council
+Scotland,East Dunbartonshire Council
+Scotland,East Lothian District Council
+Scotland,East Renfrewshire Council
+Scotland,Edinburgh City Council
+Scotland,Falkirk Council
+Scotland,Fife Council
+Scotland,Glasgow City Council
+Scotland,Highland Council
+Scotland,Inverclyde Council
+Scotland,Midlothian Council
+Scotland,Moray Council
+Scotland,North Ayrshire Council
+Scotland,North Lanarkshire Council
+Scotland,Orkney Islands Council
+Scotland,Perth and Kinross Council
+Scotland,Renfrewshire Council
+Scotland,Shetland Islands Council
+Scotland,South Ayrshire Council
+Scotland,South Lanarkshire Council
+Scotland,Stirling Council
+Scotland,West Lothian Council
+Scotland,Western Isles Council
+Wales,Isle of Anglesey County Council
+Wales,Gwynedd County Council
+Wales,Conwy County Borough Council
+Wales,Denbighshire County Council
+Wales,Flintshire County Council
+Wales,Wrexham County Borough Council
+Wales,Powys County Council
+Wales,Ceredigion County Council
+Wales,Pembrokeshire County Council
+Wales,Carmarthenshire County Council
+Wales,Swansea City and Borough Council
+Wales,Neath Port Talbot County Borough Council
+Wales,Bridgend County Borough Council
+Wales,Vale of Glamorgan Council
+Wales,Rhondda Cynon Taff County Borough Council
+Wales,Merthyr Tydfil County Borough Council
+Wales,Caerphilly County Borough Council
+Wales,Blaenau Gwent County Borough Council
+Wales,Torfaen County Borough Council
+Wales,Monmouthshire County Council
+Wales,Newport City Council
+Wales,Cardiff Council
+London,City of London
+London,Barking and Dagenham London Borough Council
+London,Barnet London Borough Council
+London,Bexley London Borough Council
+London,Brent London Borough Council
+London,Bromley London Borough Council
+London,Camden London Borough Council
+London,Croydon London Borough Council
+London,Ealing London Borough Council
+London,Enfield London Borough Council
+London,Greenwich London Borough Council
+London,Hackney London Borough Council
+London,Hammersmith and Fulham London Borough Council
+London,Haringey London Borough Council
+London,Harrow London Borough Council
+London,Havering London Borough Council
+London,Hillingdon London Borough Council
+London,Hounslow London Borough Council
+London,Islington London Borough Council
+London,Kensington and Chelsea Royal Borough Council
+London,Royal Borough of Kingston upon Thames
+London,Lambeth London Borough Council
+London,Lewisham London Borough Council
+London,Merton London Borough Council
+London,Newham London Borough Council
+London,Redbridge London Borough Council
+London,Richmond upon Thames London Borough Council
+London,Southwark London Borough Council
+London,Sutton London Borough Council
+London,Tower Hamlets London Borough Council
+London,Waltham Forest London Borough
+London,Wandsworth Borough Council
+London,Westminster City Council
+East of England,Peterborough City Council
+East of England,Luton Borough Council
+East of England,Bedford Borough Council
+East of England,Central Bedfordshire Council
+East of England,Southend on Sea Borough Council
+East of England,Thurrock Council
+East of England,Cambridge City Council
+East of England,East Cambridgeshire District Council
+East of England,Fenland District Council
+East of England,Huntingdonshire District Council
+East of England,South Cambridgeshire District Council
+East of England,Basildon District Council
+East of England,Braintree District Council
+East of England,Brentwood Borough Council
+East of England,Castle Point Borough Council
+East of England,Chelmsford Borough Council
+East of England,Colchester Borough Council
+East of England,Epping Forest District Council
+East of England,Harlow District Council
+East of England,Maldon District Council
+East of England,Rochford District Council
+East of England,Tendring District Council
+East of England,Uttlesford District Council
+East of England,Broxbourne Borough Council
+East of England,Dacorum Borough Council
+East of England,East Hertfordshire District Council
+East of England,Hertsmere Borough Council
+East of England,North Hertfordshire District Council
+East of England,Stevenage Borough Council
+East of England,Three Rivers District Council
+East of England,Watford Borough Council
+East of England,Welwyn Hatfield Borough Council
+East of England,Breckland District Council
+East of England,Broadland District Council
+East of England,Great Yarmouth Borough Council
+East of England,King's Lynn and West Norfolk Borough Council
+East of England,North Norfolk District Council
+East of England,Norwich City Council
+East of England,South Norfolk Council
+East of England,Babergh District Council
+East of England,Forest Heath District Council
+East of England,Ipswich Borough Council
+East of England,Mid Suffolk District Council
+East of England,St Edmundsbury Borough Council
+East of England,Suffolk Coastal District Council
+East of England,Waveney District Council
+East of England,St Albans City Council
+England,Liverpool City Council
+England,Sefton Council
+England,Wyre Borough Council
+England,Knowsley Metropolitan Borough Council
+England,South Ribble Borough Council
+England,West Lancashire District Council
+England,Ribble Valley Borough Council
+England,Rossendale Borough Council
+England,Stroud District Council
+England,Cherwell District Council
+England,St Helens Metropolitan Borough Council
+England,Wirral Metropolitan Borough Council
+England,Suffolk Coastal District Council
+England,St Edmundsbury Borough Council
+England,Mid Suffolk District Council
+England,Ipswich Borough Council
+England,Barnet London Borough Council
+England,Barking and Dagenham London Borough Council
+England,Waveney District Council
+England,Huntingdonshire District Council
+England,Brent London Borough Council
+England,Bexley London Borough Council
+England,Wokingham Borough Council
+England,Charnwood Borough Council
+England,Kingston upon Hull City Council
+England,West Berkshire Council
+England,East Riding of Yorkshire Council
+England,Craven District Council
+England,Slough Borough Council
+England,Cornwall Council
+England,Bristol City Council
+England,Solihull Metropolitan Borough Council
+England,Walsall Metropolitan Borough Council
+England,Stratford on Avon District Council
+England,Warwick District Council
+England,Birmingham City Council
+England,Coventry City Council
+England,Arun District Council
+England,Adur District Council
+England,Crawley Borough Council
+England,South Cambridgeshire District Council
+England,Mid Sussex District Council
+England,Horsham District Council
+England,Worthing Borough Council
+England,Aylesbury Vale District Council
+England,Welwyn Hatfield Borough Council
+England,Breckland District Council
+England,Broadland District Council
+England,Great Yarmouth Borough Council
+England,King's Lynn and West Norfolk Borough Council
+England,North Norfolk District Council
+England,Oxford City Council
+England,South Norfolk Council
+England,Babergh District Council
+England,Forest Heath District Council
+England,Elmbridge Borough Council
+England,West Oxfordshire District Council
+England,Hinckley and Bosworth Borough Council
+England,Stoke on Trent City Council
+England,Peterborough City Council
+England,Derbyshire Dales District Council
+England,Chesterfield Borough Council
+England,Derby City Council
+England,West Lindsey District Council
+England,Bolsover District Council
+England,Amber Valley Borough Council
+England,North Kesteven District Council
+England,Lincoln City Council
+England,South Kesteven District Council
+England,South Holland District Council
+England,South Derbyshire District Council
+England,Torridge District Council
+England,West Devon Borough Council
+England,South Hams District Council
+England,Teignbridge District Council
+England,Mid Devon District Council
+England,North Devon District Council
+England,East Devon District Council
+England,Exeter City Council
+England,Torbay Council
+England,Plymouth City Council
+England,East Cambridgeshire District Council
+England,Sedgemoor District Council
+England,Mendip District Council
+England,Trafford Metropolitan Borough
+England,Tameside Metropolitan Borough Council
+England,Hackney London Borough Council
+England,Rochdale Metropolitan Borough Council
+England,Gloucester City Council
+England,Stockport Metropolitan Borough Council
+England,Cotswold District Council
+England,Bolton Metropolitan Borough Council
+England,South Lakeland District Council
+England,Manchester City Council
+England,Bury Metropolitan Borough Council
+England,North Hertfordshire District Council
+England,Hertsmere Borough Council
+England,Bedford Borough Council
+England,Central Bedfordshire Council
+England,Broxbourne Borough Council
+England,Uttlesford District Council
+England,East Hertfordshire District Council
+England,Dacorum Borough Council
+England,Bassetlaw District Council
+England,Broxtowe Borough Council
+England,Nottingham City Council
+England,Ashfield District Council
+England,Watford Borough Council
+England,Three Rivers District Council
+England,Gedling Borough Council
+England,Mansfield District Council
+England,Redcar and Cleveland Borough Council
+England,Bromley London Borough Council
+England,Middlesbrough Council
+England,Swale Borough Council
+England,Camden London Borough Council
+England,Milton Keynes Council
+England,Hartlepool Borough Council
+England,Darlington Borough Council
+England,Greenwich London Borough Council
+England,Cambridge City Council
+England,Northumberland
+England,South Gloucestershire Council
+England,Cheltenham Borough Council
+England,Borough of Poole
+England,Bournemouth Borough Council
+England,Christchurch Borough Council
+England,East Dorset District Council
+England,North Dorset District Council
+England,Purbeck District Council
+England,West Dorset District Council
+England,Weymouth and Portland Borough Council
+England,Havant Borough Council
+England,Hart District Council
+England,Rushmoor Borough Council
+England,Tendring District Council
+England,Eastleigh Borough Council
+England,East Hampshire District Council
+England,Gosport Borough Council
+England,Fareham Borough Council
+England,Castle Point Borough Council
+England,Chelmsford Borough Council
+England,Braintree District Council
+England,Brentwood Borough Council
+England,Harlow District Council
+England,Maldon District Council
+England,Colchester Borough Council
+England,Epping Forest District Council
+England,Rotherham Metropolitan Borough Council
+England,Doncaster Metropolitan Borough Council
+England,Ryedale District Council
+England,Richmondshire District Council
+England,Harrogate Borough Council
+England,Hambleton District Council
+England,Barnsley Metropolitan Borough Council
+England,Rochford District Council
+England,Selby District Council
+England,Scarborough Borough Council
+England,Enfield London Borough Council
+England,New Forest District Council
+England,Fenland District Council
+England,Ashford Borough Council
+England,Rugby Borough Council
+England,Nuneaton and Bedworth Borough Council
+England,Staffordshire Moorlands District Council
+England,Stafford Borough Council
+England,North Warwickshire Borough Council
+England,Tamworth Borough Council
+England,Lichfield District Council
+England,East Staffordshire Borough Council
+England,South Staffordshire Council
+England,Newcastle under Lyme Borough Council
+England,Erewash Borough Council
+England,High Peak Borough Council
+England,Sevenoaks District Council
+England,Shepway District Council
+England,Rutland County Council
+England,Leicester City Council
+England,South Tyneside Metropolitan Borough Council
+England,North Tyneside Metropolitan Borough Council
+England,Newcastle upon Tyne City Council
+England,Gateshead Borough Council
+England,Isle of Wight Council
+England,Medway Council
+England,Gravesham Borough Council
+England,Maidstone Borough Council
+England,Dartford Borough Council
+England,Dover District Council
+England,Dudley Metropolitan Borough Council
+England,Mole Valley District Council
+England,Sandwell Metropolitan Borough Council
+England,Winchester City Council
+England,Stockton-on-Tees Borough Council
+England,Canterbury City Council
+England,Test Valley Borough Council
+England,Cheshire West and Chester Council
+England,Halton Borough Council
+England,Sunderland City Council
+England,Cheshire East Council
+England,Wandsworth Borough Council
+England,Barrow in Furness Borough Council
+England,Warrington Borough Council
+England,Oldham Metropolitan Borough Council
+England,Copeland Borough Council
+England,Carlisle City Council
+England,Eden District Council
+England,Forest of Dean District Council
+England,Salford City Council
+England,Reading Borough Council
+England,Southend on Sea Borough Council
+England,North Somerset District Council
+England,Allerdale Borough Council
+England,City of London
+England,Bath and North East Somerset Council
+England,Basildon District Council
+England,Thurrock Council
+England,Westminster City Council
+England,Isle of Scilly Council
+England,South Bucks District Council
+England,Chiltern District Council
+England,Sutton London Borough Council
+England,Tower Hamlets London Borough Council
+England,Waltham Forest London Borough
+England,Windsor and Maidenhead Royal Borough Council
+England,Redbridge London Borough Council
+England,Richmond upon Thames London Borough Council
+England,Royal Borough of Kingston upon Thames
+England,Southwark London Borough Council
+England,Epsom and Ewell Borough Council
+England,Bracknell Forest Borough Council
+England,Chichester District Council
+England,Blaby District Council
+England,Guildford Borough Council
+England,Wolverhampton City Council
+England,Croydon London Borough Council
+England,Tewkesbury Borough Council
+England,Stevenage Borough Council
+England,Bromsgrove District Council
+England,Reigate and Banstead Borough Council
+England,Runnymede Borough Council
+England,Spelthorne Borough Council
+England,Havering London Borough Council
+England,Harrow London Borough Council
+England,Hounslow London Borough Council
+England,Hillingdon London Borough Council
+England,St Albans City Council
+England,Islington London Borough Council
+England,Lewisham London Borough Council
+England,Lambeth London Borough Council
+England,Newham London Borough Council
+England,Merton London Borough Council
+England,North East Derbyshire District Council
+England,Tandridge District Council
+England,Melton Borough Council
+England,York City Council
+England,Waverley Borough Council
+England,Luton Borough Council
+England,Portsmouth City Council
+England,Basingstoke and Deane Borough Council
+England,Woking Borough Council
+England,Lewes District Council
+England,Rother District Council
+England,Wealden District Council
+England,Southampton City Council
+England,Wycombe District Council
+England,Brighton & Hove City Council
+England,Eastbourne Borough Council
+England,Hastings Borough Council
+England,Boston Borough Council
+England,East Lindsey District Council
+England,North East Lincolnshire Council
+England,Newark and Sherwood District Council
+England,Kirklees Council
+England,Leeds City Council
+England,City of Bradford Metropolitan District Council
+England,City of Wakefield Metropolitan District Council
+England,Sheffield City Council
+England,Rushcliffe Borough Council
+England,West Somerset District Council
+England,Swindon Borough Council
+England,South Somerset District Council
+England,Taunton Deane District Council
+England,Shropshire Council
+England,Telford and Wrekin Borough Council
+England,Wiltshire Council
+England,Herefordshire County Council
+England,Kensington and Chelsea Royal Borough Council
+England,Cannock Chase District Council
+England,Blackburn with Darwen Borough Council
+England,Wigan Metropolitan Borough Council
+England,Burnley Borough Council
+England,Blackpool Borough Council
+England,Fylde Borough Council
+England,Chorley Borough Council
+England,Lancaster City Council
+England,Hyndburn Borough Council
+England,Preston City Council
+England,Pendle Borough Council
+England,Malvern Hills District Council
+England,Hammersmith and Fulham London Borough Council
+England,Haringey London Borough Council
+England,Northampton Borough Council
+England,Kettering Borough Council
+England,East Northamptonshire District Council
+England,Daventry District Council
+England,Corby Borough Council
+England,Oadby and Wigston Borough Council
+England,North West Leicestershire District Council
+England,Harborough District Council
+England,Wellingborough Borough Council
+England,South Northamptonshire Council
+England,Tunbridge Wells Borough Council
+England,Ealing London Borough Council
+England,Tonbridge and Malling Borough Council
+England,Thanet District Council
+England,South Oxfordshire District Council
+England,Calderdale Metropolitan Borough Council
+England,Wyre Forest District Council
+England,Wychavon District Council
+England,Worcester City Council
+England,Redditch Borough Council
+England,North Lincolnshire Council
+England,Surrey Heath Borough Council
+England,Vale of White Horse District Council
+England,Norwich City Council
+England,Durham County Council
