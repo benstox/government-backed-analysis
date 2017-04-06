@@ -36,6 +36,10 @@ booleans <- c(
 
 # change all the True/Falses to 1/0s
 data[,booleans] <- sapply(data[,booleans], function(x) {as.numeric(x) -1})
+# add .s into all the the region names
+data$region <- make.names(data$region)
+# recode the categorical region column into various binary columns
+data <- cbind(data, with(data, model.matrix(~ region + 0)))
 
 #  [1] "id"                                            "investee"                                     
 #  [3] "investee_id"                                   "primary_date"                                 
@@ -44,15 +48,22 @@ data[,booleans] <- sapply(data[,booleans], function(x) {as.numeric(x) -1})
 #  [9] "amount_gbp"                                    "government"                                   
 # [11] "private_equity_and_venture_capital"            "corporate"                                    
 # [13] "angel_network"                                 "private_investment_vehicle"                   
-# [15] "crowd_funding"                                 "business_and_professional_services"           
-# [17] "agriculture__forestry_and_fishing"             "supply_chain"                                 
-# [19] "media"                                         "tradespeople"                                 
-# [21] "transportation_operators"                      "technology_ip_based_businesses"               
-# [23] "energy"                                        "craft_industries"                             
-# [25] "industrials"                                   "retail"                                       
-# [27] "leisure_and_entertainment"                     "personal_services"                            
-# [29] "built_environment_and_infrastructure"          "telecommunications_services"                  
-# [31] "is_dead"                                      
+# [15] "crowd_funding"                                 "tradespeople"                                 
+# [17] "technology_ip_based_businesses"                "energy"                                       
+# [19] "leisure_and_entertainment"                     "telecommunications_services"                  
+# [21] "transportation_operators"                      "supply_chain"                                 
+# [23] "agriculture__forestry_and_fishing"             "retail"                                       
+# [25] "craft_industries"                              "business_and_professional_services"           
+# [27] "built_environment_and_infrastructure"          "media"                                        
+# [29] "personal_services"                             "industrials"                                  
+# [31] "is_dead"                                       "regionEast.Midlands"                          
+# [33] "regionEast.of.England"                         "regionLondon"                                 
+# [35] "regionNorth.East"                              "regionNorth.West"                             
+# [37] "regionNorthern.Ireland"                        "regionScotland"                               
+# [39] "regionSouth.East"                              "regionSouth.West"                             
+# [41] "regionWales"                                   "regionWest.Midlands"                          
+# [43] "regionYorkshire.and.Humberside"               
+                  
 
 model <- glm(
     is_dead ~
@@ -80,18 +91,181 @@ model <- glm(
         region +
         amount_gbp, family=binomial(link="logit"), data=data)
 
-# model <- speedglm(
-#     is_dead ~
-#         business_and_professional_services *
-#         media *
-#         transportation_operators *
-#         technology_ip_based_businesses *
-#         energy *
-#         industrials *
-#         retail *
-#         leisure_and_entertainment *
-#         personal_services *
-#         region, family=binomial(link="logit"), data=data)
+
+# data_sub <- data[,c(
+#     "is_dead",
+#     "government",
+#     "private_equity_and_venture_capital",
+#     "angel_network",
+#     "business_and_professional_services",
+#     "media",
+#     "technology_ip_based_businesses",
+#     "industrials",
+#     "retail",
+#     "leisure_and_entertainment",
+#     "regionEast.of.England",
+#     "regionLondon",
+#     "regionNorth.East",
+#     "regionNorth.West",
+#     "regionScotland",
+#     "regionSouth.East",
+#     "regionSouth.West",
+#     "regionWales",
+#     "regionWest.Midlands",
+#     "regionYorkshire.and.Humberside"
+#     )]
+# model <- glm(is_dead ~ .*., family=binomial(link="logit"), data=data_sub)
+# summary(model)
+
+# aicstep <- stepAIC(model, direction="backward")
+# aicstep$anova
+# summary(aicstep)
+
+# Call:
+# glm(formula = is_dead ~ government + private_equity_and_venture_capital + 
+#     angel_network + business_and_professional_services + media + 
+#     technology_ip_based_businesses + industrials + retail + leisure_and_entertainment + 
+#     regionEast.of.England + regionLondon + regionNorth.East + 
+#     regionNorth.West + regionScotland + regionSouth.East + regionSouth.West + 
+#     regionWales + regionWest.Midlands + regionYorkshire.and.Humberside + 
+#     government:angel_network + government:business_and_professional_services + 
+#     government:regionEast.of.England + government:regionNorth.East + 
+#     government:regionNorth.West + government:regionScotland + 
+#     government:regionSouth.East + government:regionWales + government:regionWest.Midlands + 
+#     government:regionYorkshire.and.Humberside + private_equity_and_venture_capital:industrials + 
+#     private_equity_and_venture_capital:retail + private_equity_and_venture_capital:regionEast.of.England + 
+#     private_equity_and_venture_capital:regionLondon + private_equity_and_venture_capital:regionNorth.East + 
+#     private_equity_and_venture_capital:regionNorth.West + private_equity_and_venture_capital:regionScotland + 
+#     private_equity_and_venture_capital:regionSouth.East + private_equity_and_venture_capital:regionWest.Midlands + 
+#     angel_network:technology_ip_based_businesses + angel_network:industrials + 
+#     angel_network:leisure_and_entertainment + angel_network:regionNorth.East + 
+#     angel_network:regionNorth.West + angel_network:regionWales + 
+#     business_and_professional_services:media + business_and_professional_services:regionEast.of.England + 
+#     business_and_professional_services:regionLondon + business_and_professional_services:regionNorth.East + 
+#     business_and_professional_services:regionNorth.West + business_and_professional_services:regionScotland + 
+#     business_and_professional_services:regionSouth.East + business_and_professional_services:regionSouth.West + 
+#     business_and_professional_services:regionWales + business_and_professional_services:regionWest.Midlands + 
+#     business_and_professional_services:regionYorkshire.and.Humberside + 
+#     media:retail + media:leisure_and_entertainment + media:regionNorth.West + 
+#     media:regionYorkshire.and.Humberside + technology_ip_based_businesses:industrials + 
+#     technology_ip_based_businesses:leisure_and_entertainment + 
+#     technology_ip_based_businesses:regionEast.of.England + technology_ip_based_businesses:regionLondon + 
+#     technology_ip_based_businesses:regionNorth.East + technology_ip_based_businesses:regionNorth.West + 
+#     technology_ip_based_businesses:regionScotland + technology_ip_based_businesses:regionSouth.East + 
+#     technology_ip_based_businesses:regionWales + technology_ip_based_businesses:regionWest.Midlands + 
+#     technology_ip_based_businesses:regionYorkshire.and.Humberside + 
+#     industrials:leisure_and_entertainment + industrials:regionEast.of.England + 
+#     industrials:regionLondon + industrials:regionNorth.East + 
+#     industrials:regionNorth.West + industrials:regionScotland + 
+#     industrials:regionSouth.East + industrials:regionSouth.West + 
+#     industrials:regionWales + industrials:regionWest.Midlands + 
+#     industrials:regionYorkshire.and.Humberside + retail:regionYorkshire.and.Humberside, 
+#     family = binomial(link = "logit"), data = data_sub)
+#
+# Deviance Residuals: 
+#      Min        1Q    Median        3Q       Max  
+# -1.79078  -0.45025  -0.29462  -0.00015   3.04915  
+#
+# Coefficients:
+#                                                                     Estimate Std. Error z value Pr(>|z|)    
+# (Intercept)                                                         -34.9379  1203.3106  -0.029 0.976837    
+# government                                                           79.8925  2666.9080   0.030 0.976101    
+# private_equity_and_venture_capital                                  -34.2598  1203.3092  -0.028 0.977286    
+# angel_network                                                         4.1958     1.1074   3.789 0.000151 ***
+# business_and_professional_services                                   32.4858  1203.3104   0.027 0.978462    
+# media                                                                 1.5315     0.4658   3.288 0.001009 ** 
+# technology_ip_based_businesses                                      -45.1970  1663.8919  -0.027 0.978329    
+# industrials                                                          34.2804  1203.3104   0.028 0.977273    
+# retail                                                                0.8225     0.5204   1.580 0.113998    
+# leisure_and_entertainment                                             0.7559     0.6876   1.099 0.271635    
+# regionEast.of.England                                                29.9652  1203.3108   0.025 0.980133    
+# regionLondon                                                         31.6030  1203.3107   0.026 0.979047    
+# regionNorth.East                                                     34.0978  1203.3109   0.028 0.977394    
+# regionNorth.West                                                     31.7043  1203.3108   0.026 0.978980    
+# regionScotland                                                       31.2674  1203.3111   0.026 0.979270    
+# regionSouth.East                                                     32.5663  1203.3109   0.027 0.978409    
+# regionSouth.West                                                     32.2402  1203.3111   0.027 0.978625    
+# regionWales                                                          34.6229  1203.3109   0.029 0.977046    
+# regionWest.Midlands                                                  33.9200  1203.3110   0.028 0.977512    
+# regionYorkshire.and.Humberside                                       31.0365  1203.3098   0.026 0.979423    
+# government:angel_network                                           -100.3336  3687.6195  -0.027 0.978294    
+# government:business_and_professional_services                         2.0122     1.1278   1.784 0.074381 .  
+# government:regionEast.of.England                                    -99.5714  8516.2275  -0.012 0.990671    
+# government:regionNorth.East                                         -79.4627  2666.9082  -0.030 0.976230    
+# government:regionNorth.West                                         -79.8863  2666.9082  -0.030 0.976103    
+# government:regionScotland                                           -76.4821  2666.9084  -0.029 0.977121    
+# government:regionSouth.East                                         -99.9112  6528.3605  -0.015 0.987790    
+# government:regionWales                                              -78.7116  2666.9083  -0.030 0.976455    
+# government:regionWest.Midlands                                      -78.1946  2666.9088  -0.029 0.976609    
+# government:regionYorkshire.and.Humberside                           -79.0667  2666.9077  -0.030 0.976348    
+# private_equity_and_venture_capital:industrials                        2.1891     0.9300   2.354 0.018580 *  
+# private_equity_and_venture_capital:retail                             1.3580     0.8283   1.640 0.101099    
+# private_equity_and_venture_capital:regionEast.of.England             32.8952  1203.3091   0.027 0.978191    
+# private_equity_and_venture_capital:regionLondon                      33.9951  1203.3091   0.028 0.977462    
+# private_equity_and_venture_capital:regionNorth.East                  34.2366  1203.3095   0.028 0.977302    
+# private_equity_and_venture_capital:regionNorth.West                  32.8543  1203.3096   0.027 0.978218    
+# private_equity_and_venture_capital:regionScotland                    30.2318  1203.3102   0.025 0.979956    
+# private_equity_and_venture_capital:regionSouth.East                  34.7342  1203.3095   0.029 0.976972    
+# private_equity_and_venture_capital:regionWest.Midlands               36.2256  1203.3100   0.030 0.975983    
+# angel_network:technology_ip_based_businesses                         -3.6874     1.2657  -2.913 0.003575 ** 
+# angel_network:industrials                                            -2.9335     1.4018  -2.093 0.036377 *  
+# angel_network:leisure_and_entertainment                              27.8715 52141.6234   0.001 0.999574    
+# angel_network:regionNorth.East                                      -22.8874 10516.8084  -0.002 0.998264    
+# angel_network:regionNorth.West                                      -20.2485  7446.7138  -0.003 0.997830    
+# angel_network:regionWales                                           -24.3988  8016.6020  -0.003 0.997572    
+# business_and_professional_services:media                             -2.7006     1.2651  -2.135 0.032791 *  
+# business_and_professional_services:regionEast.of.England            -31.6304  1203.3106  -0.026 0.979029    
+# business_and_professional_services:regionLondon                     -32.7215  1203.3104  -0.027 0.978306    
+# business_and_professional_services:regionNorth.East                 -34.1540  1203.3112  -0.028 0.977356    
+# business_and_professional_services:regionNorth.West                 -33.2372  1203.3112  -0.028 0.977964    
+# business_and_professional_services:regionScotland                   -32.8865  1203.3114  -0.027 0.978197    
+# business_and_professional_services:regionSouth.East                 -32.9310  1203.3109  -0.027 0.978167    
+# business_and_professional_services:regionSouth.West                 -30.8451  1203.3112  -0.026 0.979550    
+# business_and_professional_services:regionWales                      -53.6414  5373.1364  -0.010 0.992035    
+# business_and_professional_services:regionWest.Midlands              -53.4902  5253.6037  -0.010 0.991876    
+# business_and_professional_services:regionYorkshire.and.Humberside   -33.2422  1203.3103  -0.028 0.977961    
+# media:retail                                                         -1.6406     0.9513  -1.725 0.084595 .  
+# media:leisure_and_entertainment                                       2.4263     1.2509   1.940 0.052433 .  
+# media:regionNorth.West                                              -19.9908  7677.1967  -0.003 0.997922    
+# media:regionYorkshire.and.Humberside                                -33.5559  8876.0203  -0.004 0.996984    
+# technology_ip_based_businesses:industrials                           -1.7249     0.8395  -2.055 0.039918 *  
+# technology_ip_based_businesses:leisure_and_entertainment             -3.1858     1.4299  -2.228 0.025884 *  
+# technology_ip_based_businesses:regionEast.of.England                 47.9703  1663.8924   0.029 0.977000    
+# technology_ip_based_businesses:regionLondon                          46.2219  1663.8920   0.028 0.977838    
+# technology_ip_based_businesses:regionNorth.East                      45.5808  1663.8921   0.027 0.978145    
+# technology_ip_based_businesses:regionNorth.West                      46.6499  1663.8922   0.028 0.977633    
+# technology_ip_based_businesses:regionScotland                        46.1527  1663.8923   0.028 0.977871    
+# technology_ip_based_businesses:regionSouth.East                      43.7637  1663.8922   0.026 0.979016    
+# technology_ip_based_businesses:regionWales                           44.0575  1663.8923   0.026 0.978876    
+# technology_ip_based_businesses:regionWest.Midlands                   43.3012  1663.8926   0.026 0.979238    
+# technology_ip_based_businesses:regionYorkshire.and.Humberside        47.9341  1663.8936   0.029 0.977017    
+# industrials:leisure_and_entertainment                               -19.3385  4610.1222  -0.004 0.996653    
+# industrials:regionEast.of.England                                   -32.5940  1203.3104  -0.027 0.978390    
+# industrials:regionLondon                                            -34.7032  1203.3108  -0.029 0.976992    
+# industrials:regionNorth.East                                        -34.6260  1203.3105  -0.029 0.977044    
+# industrials:regionNorth.West                                        -32.5117  1203.3105  -0.027 0.978445    
+# industrials:regionScotland                                          -32.2605  1203.3107  -0.027 0.978611    
+# industrials:regionSouth.East                                        -34.6345  1203.3111  -0.029 0.977038    
+# industrials:regionSouth.West                                        -51.3660  4835.4842  -0.011 0.991524    
+# industrials:regionWales                                             -49.4743  6044.0136  -0.008 0.993469    
+# industrials:regionWest.Midlands                                     -33.0589  1203.3124  -0.027 0.978082    
+# industrials:regionYorkshire.and.Humberside                          -32.5527  1203.3091  -0.027 0.978418    
+# retail:regionYorkshire.and.Humberside                                17.5710   850.6601   0.021 0.983520    
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#
+# (Dispersion parameter for binomial family taken to be 1)
+#
+#     Null deviance: 732.57  on 994  degrees of freedom
+# Residual deviance: 535.57  on 912  degrees of freedom
+# AIC: 701.57
+#
+# Number of Fisher Scoring iterations: 19
+
+# minus_bad <- update(
+#     aicstep,
+#     . ~ .
+#         - angel_network:leisure_and_entertainment)
 
 
 aicstep <- stepAIC(model, direction="backward")
