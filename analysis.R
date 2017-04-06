@@ -1,6 +1,8 @@
 install.packages("popbio")
+install.packages("speedglm")
 library(MASS)
 library(popbio)
+library(speedglm)
 
 setwd("~/Desktop/eleanor_2011_fundraisings")
 
@@ -77,6 +79,20 @@ model <- glm(
         telecommunications_services +
         region +
         amount_gbp, family=binomial(link="logit"), data=data)
+
+# model <- speedglm(
+#     is_dead ~
+#         business_and_professional_services *
+#         media *
+#         transportation_operators *
+#         technology_ip_based_businesses *
+#         energy *
+#         industrials *
+#         retail *
+#         leisure_and_entertainment *
+#         personal_services *
+#         region, family=binomial(link="logit"), data=data)
+
 
 aicstep <- stepAIC(model, direction="backward")
 aicstep$anova
